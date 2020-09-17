@@ -57,7 +57,7 @@ void HugeInteger::subtract(HugeInteger &A){
     if(n<40 && A.digit[n]>0){ //빼는 수의 자리수가 더 클 때는 0이 됨
         for(int x = 0; x<40; x++){
             digit[x]=0;
-            n = 0;
+            n = 1;
             return;
         }
     }
@@ -71,7 +71,7 @@ void HugeInteger::subtract(HugeInteger &A){
             else{
                 for(int x = 0; x<40; x++){
                 digit[x]=0;
-                n=0;
+                n=1;
                 return;
                 }
             }
