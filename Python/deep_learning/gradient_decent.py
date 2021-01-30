@@ -1,10 +1,5 @@
 import numpy as np
 
-class neural_net:
-    def __init__(self,input,hidden,output,weigth_init):
-        pass
-
-
 def gradient(f,x):
     grad = np.zeros_like(x)
     h= 0.0001
