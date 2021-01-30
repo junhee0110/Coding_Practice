@@ -1,7 +1,7 @@
 # !!!!Coding Practice Repositry!!!!
 
-문제풀이 코드와 공부 노트를 보관하기 위해 개설했습니다!
------
+문제풀이 코드와 공부 노트를 보관하기 위한 Repositry입니다!
+
 ## 관심분야
 1. Machine Leraning
 2. Embedded Programming
