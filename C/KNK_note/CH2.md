@@ -6,7 +6,7 @@
 
 몇몇 언어로 작성된 프로그램에 반해서, C 프로그램은 **Boilerplate**를 필요로 하기 때문에 완성된 프로그램은 몇 줄로 줄어들 수 있다.
 
-### Printing a Pun
+### [PROGRAM]Printing a Pun
 
 **K&R**의 첫 프로그램은 **Hello, World**를 출력하는 매우 짧은 프로그램이다. 우리는 썰렁한 말장난을 하나 출력해보자.
 
@@ -123,7 +123,7 @@
 
 - **함수**(Function)은 다른 프로그래밍 언어의 **Procedures**와 **Subroutines**와 같다. 이들은 프로그램들이 만들어지는 구성요소이다.
 - 사실 C 프로그램은 함수들의 집합에 지나지 않는다.
-- 함수들은 두가지로 나눠진다. **프로그래머가 작성한 것**과 **C 구현의 일부로 제공되는 것**이다. 나중에 이를 **라이브러리 함수**(Library function)이라고 언급할 것이다. 왜냐하면 이들이 컴파일러와 제공되는 함수들의 **라이브러리**에 속하기 때문이다.
+- 함수들은 두가지로 나눠진다. **프로그래머가 작성한 것**과 **C의 일부로 제공되는 것**이다. 나중에 이를 **라이브러리 함수**(Library function)이라고 언급할 것이다. 왜냐하면 이들이 컴파일러와 제공되는 함수들의 **라이브러리**에 속하기 때문이다.
 - 함수라는 용어는 수학에서 유래했다.
 - C는 함수라는 용어를 더욱 느슨하게 사용한다. C에서 함수는 **이름이 있는 그룹화된 문장들의 나열**이다.
 - 몇몇 함수는 값을 계산하고 몇몇은 그렇지 않다. 값을 계산하는 함수는 반환할 값을 명시하기 위해 **return**문을 사용한다. 
@@ -265,29 +265,29 @@
 
 ### Types
 
-- 모든 변수는 어떤 종류의 데이터를 보관할지 특정시키는 **타입**(Type)을 가져야만 한다.
-- C는 다양한 타입을 가지고 있지만, 지금은 **int**와 **float** 두가지만 기억하자.
-- 타입에 따라서 변수가 어떻게 저장되고 어떤 연산이 가능한지가 결정되므로, 적절한 타입을 고르는것은 중요하다. 
-- 숫자형 변수들의 타입은 그 변수가 저장할 수 있는 가장 큰 수와 작은 수도 결정한다. 또한 소수점 아래 자리를 허용하는지도 결정한다.
+- 모든 변수는 어떤 종류의 데이터를 보관할지 특정시키는 **형**(Type)을 가져야만 한다.
+- C는 다양한 형을 가지고 있지만, 지금은 **int**와 **float** 두가지만 기억하자.
+- 형에 따라서 변수가 어떻게 저장되고 어떤 연산이 가능한지가 결정되므로, 적절한 형을 고르는것은 중요하다. 
+- 숫자형 변수들의 형은 그 변수가 저장할 수 있는 가장 큰 수와 작은 수도 결정한다. 또한 소수점 아래 자리를 허용하는지도 결정한다.
 
-- **int** (integer의 약자) 타입은 0, 1, 392, -2553같은 정수를 저장할 수 있다. 
+- **int** (integer의 약자) 형은 0, 1, 392, -2553같은 정수를 저장할 수 있다. 
 - 그 범위는 제한되어 있다. 가장 큰 **int** 값은 보통 **2,147,483,647**이지만 **832,767**만큼 작을 수도 있다.
 
-- **float** (floating-point의 약자) 타입은 **int**보다 더 큰 숫자도 저장할 수 있다.
+- **float** (floating-point의 약자) 형은 **int**보다 더 큰 숫자도 저장할 수 있다.
 - 게다가, **float** 변수는 소수점 아래 자리도 저장할 수 있다.
-- 하지만 몇가지 단점이 있다. **float**의 연산은 **int**의 연산보다 느리다. 가장 중요한것은 **float** 변수의 값은 주로 저장된 수의 근사값이라는 것이다. 만약 **float** 변수에 0.1을 저장한다면 반올림 오차로(Rounding error) 인해 변수가 0.099999999999987같은 값을 가지는 것을 확인할 수 있을 것이다.
+- 하지만 몇가지 단점이 있다. **float**의 연산은 **int**의 연산보다 느리다. 가장 중요한것은 **float**형 변수의 값은 주로 저장된 수의 근사값이라는 것이다. 만약 **float**형 변수에 0.1을 저장한다면 반올림 오차로(Rounding error) 인해 변수가 0.099999999999987같은 값을 가지는 것을 확인할 수 있을 것이다.
 
 ### Declarations
 
 - 변수는 항상 사용전에 **선언**(Declare)되어야 한다(컴파일러를 위해 기술되어야 한다).
-- 변수를 선언하기 위해, 먼저 변수에 타입을 명시해야 한다. 그리고나서 이름을 명시한다.
+- 변수를 선언하기 위해, 먼저 변수의 형을 명시해야 한다. 그리고나서 이름을 명시한다.
 - 예를 들어, 변수 **height**와 **profit**은 다음과 같이 선언된다.
     ```c
     int height;
     float profit;
     ```
-- 첫번째 선언문은 **height**를 **int**타입의 변수로 선언한다. 즉, **height**변수에는 정수 값만 저장할 수 있다.
-- 두번째 선언문은 **profit**을 **float**타입의 변수로 선언한다.
+- 첫번째 선언문은 **height**를 **int**형의 변수로 선언한다. 즉, **height**변수에는 정수 값만 저장할 수 있다.
+- 두번째 선언문은 **profit**을 **float**형의 변수로 선언한다.
 - 여러 변수가 같은 타입을 가진다면, 선언은 다음과 같이 합쳐질 수 있다.
     ```c
     int height, length, width, volume;
@@ -309,3 +309,308 @@
 
 ### Assignment
 
+- 변수는 **할당**(Assignment)함으로 값을 지정할 수 있다. 예를 들어 다음의 구문은 **height**, **length**, **width**에 값을 할당한다.
+    ```c
+    height = 8;
+    length = 12;
+    width = 10;
+    ```
+- 8, 12, 10을 **상수**(Constant)라고 한다.
+- 변수에 값을 할당하거나 사용하기 이전에,무조건 먼저 **선언**되어야한다.
+- **float**형 변수에 할당되는 상수는 보통 소수점을 포함한다. 예를 들어 **profit**이 **float**형 변수라면 다음과 같이 작성한다.
+    ```c
+    profit = 2150.48;
+    ```
+- 소수점을 포함하는 상수가 **float**형 변수에 할당될 때, **f**를 뒤에 추가하는 것이 좋다. **f**를 누락시키는 것은 컴파일러의 경고메시지를 유발한다.
+    ```c
+    profit = 2150.48f;
+    ```
+- 보통 **int**형 변수는 **int**형의 값을 할당받고, **float**형 변수는 **float**형 변수를 할당받는다.
+- 형에 맞지 않는 변수를 할당하는 것은 가능하지만 안전하지는 않다.
+- 변수에 값이 할당되면, 다른 변수의 값을 계산하는데 사용할 수 있다.
+    ```c
+    height = 8;
+    length = 12;
+    width = 10;
+    volume = height * length * width; // volume is now 960
+    ```
+- C에서 *은 곱 연산자이다. 즉, 이 구문은 **height**, **length**, **width**에 저장된 값을 곱하여 **volume**에 할당한다.
+- 일반적으로, 할당의 오른편은 상수, 변수, 연산자를 포함하는 공식이 될 수 있다. C 용어로는 **표현식**(Expression)이라고 한다.
+
+### Printing the Value of a Variable
+
+- 변수의 현재 값을 출력하기 위해 **printf** 함수를 사용할 수 있다. 예를 들어, h를 **height** 변수의 현재값이라고 할 때, 다음과 같이 입력하고 싶다면
+    ```c
+    Height : h
+    ```
+    **printf**함수를 다음과 같이 호출하여 사용한다.
+    ```c
+    printf("Height : %d\n", height);
+    ```
+- %d는 출력중에 **height**에 저장된 값이 표시될 자리를 가르키는 **플레이스홀더**(Placeholder)이다.
+- \n의 위치가 %d 바로 뒤라는 것에 주목하자. **printf**는 **height**에 저장된 값을 출력하고 다음줄로 넘어갈 것이다.
+- %d는 **int**형 변수에서만 작동한다. **float**형 변수를 출력하고 싶다면 %f를 사용하면 된다.
+- 일반적으로 %f는 소수점 아래 6자리까지 표시한다. 만약 소수점 아래 **p**자리까지 표시하고 싶다면 %.**p**f의 형식으로 사용하면 된다. 예를들어, 다음과 같이 출력하고 싶다면
+    ```c
+    Profit: $2150.48
+    ```
+    **printf**를 다음과 같이 호출하면 된다,
+    ```c
+    printf("Profit: $%.2f\n", profit);
+    ```
+- 한 번의 호출로 출력할 수 있는 변수의 개수는 제한되어 있지 않다. **height**와 **length**를 모두 출력하고 싶다면 **printf**를 다음과 같이 호출한다.
+    ```c
+    printf("Height: %d Length: %d\n", height, length);
+    ```
+### [PROGRAM]Computing the Dimensional Weight of a Box
+
+- 운송 회사는 물건의 무게가 아니고 부피로 추가 요금을 매기곤 한다. 미국에서는 일반적인 방법은 부피를 166으로 나누는 것이다(국내 운송은 194를 나눈다). 166은 허용가능한 파운드 당 세제곱인치이다. 부피를 166으로 나눈 이 수치를 **Dimensional Weight** 혹은 **Volumetric Weight**라고 한다. 만약 이 수치가 실제 무게를 초과한다면 이 수치를 기반으로 요금을 매긴다. **Dimensional Weight**를 계산하는 C 프로그램을 만든다고 가정해보자. 우리는 아직 초보이니까 일반적인 12 * 10 * 8 크기의 상자의 **Dimensional Weight**를 구하는 것으로 시작해보자. 나누기는 /로 표현된다.
+    ```c 
+    weight = volume / 166;
+    ```
+    **weight**와 **volume** 변수는 상자의 무게와 부피를 나타내는 정수형 변수이다.
+- 하지만 이 표현식은 우리가 필요한 것이 아니다. C에서는 정수와 정수를 나누면 소수점 아래가 모두 버려지기 때문이다. 즉, 부피 960을 166으로 나누면 5.783이 아닌 5가 된다.
+- 운송 회사는 소수점 아래를 올리길 바란다. 한가지 방법은 166으로 나누기 전 부피에 165를 더하는 것이다.
+     ```c 
+    weight = (volume + 165) / 166;
+    ```
+
+```c
+/// Program name : dweight.c
+/// Computes the dimensional weight of a 12 * 10 * 8 box
+
+#include <stdio.h>
+
+int main(void)
+{
+    int height, length, width, volume, weight;
+
+    height = 8;
+    length = 12;
+    width = 10;
+    volume = height * length * width;
+    weight = (volume + 165) / 166;
+
+    printf("Dimensions: %d*%d*%d\n", length, width, height);
+    printf("Volume (cubic inches): %d\n", volume);
+    printf("Dimensional weight (pounds): %d\n", weight);
+
+    return 0;
+}
+```
+**OUTPUT**
+```
+Dimensions: 12*10*8
+Volume (cubic inches): 960
+Dimensional weight (pounds): 6
+```
+
+### Initialization
+
+- 몇몇 변수는 실행과 동시에 자동적으로 0으로 설정되지만, 대부분은 그렇지 않다.
+- 기본 값을 가지고 있지 않고 값을 할당받지 못한 변수를 **초기화되지 않았다**(Uninitialized)고 한다.
+
+**[주의] 초기화되지 않은 변수에 접근하는 것은 예상치 못한 이상한 값을 보일것이다. 몇몇 컴파일러에서는 심지어 충돌이 일어날 것이다.**
+
+- 할당을 이용하여 변수의 초기값을 설정할 수 있다. 더 쉬운 방법은 선언과 동시에 초기값을 설정하는 것이다. **height**를 선언하고 초기화하고 싶다면 다음 한줄만 적으면 된다.
+    ```c
+    int height = 8;
+    ```
+- C 특수 용어에서, 8이라는 값은 **초기자**(Initializer)라고 한다.
+- 여러개의 변수가 하나의 선언에서 초기화 될 수 있다.
+    ```c
+    int height = 8, length = 12, width = 10;
+    ```
+- 각 변수가 각자의 초기자를 가져야 한다는 것을 주목하자. 다음의 예시에서 초기자 10은 **width**만 초기화 시킨다.
+    ```c
+    int height, length, width = 10;
+    ```
+### Printing Expression
+
+- **printf**는 변수에 저장된 숫자만 출력할 수 있는 것이 아니다. 숫자로 된 아무 표현식의 값이나 출력할 수 있다.
+- 이 특징을 이용하면, 프로그램을 단순화 할 수 있고 변수의 수를 줄일 수 있다.
+- 예를 들어 다음 구문은
+    ```c
+    volume = height * length * width;
+    printf("%d\n", volume);
+    ```
+    이렇게 대체할 수 있다.
+    ```c
+    printf("%d\n", height * length * width);
+    ```
+- **printf**의 이런 기능은 C의 원칙을 확실히 보여준다. ***값이 필요한 곳이라면, 같은 형의 어떤 표현도 좋다.***
+
+## 2.5 Reading Input
+
+- 입력값을 얻기 위해 **scanf** 함수를 이용한다. C 라이브러리에서 **printf**의 짝이다.
+- **scanf**와 **printf**의 **f**는 **formatted**를 의미한다.
+- 두 함수 모두 입출력의 형태를 명시하기 위해 **형식 문자열**(format string)을 필요로 한다.
+- **printf** 함수가 데이터를 어떻게 출력할지 알아야 하는 것처럼, **scanf** 함수도 입력될 데이터의 형식을 알아야한다.
+- **int** 값을 받기 위해, 다음과 같이 **scanf**를 사용한다.
+    ```c
+    scanf("%d", &i); // reads an integer; stores into i
+    ```
+- %d는 정수인 입력을 읽는다는 것을 말한다. i는 **scanf**가 입력받은 값을 저장할 변수이다.
+- &의 의미는 당장 설명하기는 힘들지만, **scanf**를 사용할 때 종종 필요하다는 정도로 알아두자.
+- **float**형을 읽기 위해서는 조금 다르게 함수를 호출한다.
+    ```c
+    scanf("%f", &x); // reads an float value; stores into x
+    ```
+    %f는 **float**형의 변수에서만 작동하기 때문에, x를 **float**형 변수라고 가정한다.
+- %f는 실수값이 입력되는 것을 읽겠다는 것을 의미한다. 즉, 입력되는 수는 소수점을 포함할테지만 꼭 그럴필요는 없다.
+
+### [PROGRAM] Computing the Dimensional Weight of a Box (Revisited)
+
+- 이제 사용자가 박스의 크기를 입력할 수 있도록 프로그램을 개선시킬 수 있다.
+- 각 **scanf**함수가 **printf**함수가 호출된 직후에 호출되는 것에 주목하자. 이 방법으로 사용자는 어떤 값을 언제 입력할지 알 수 있다.
+    
+```c
+// Program name: dweight2.c
+// Computes the dimensional weight of a
+// box from input provided by the user
+
+#include <stdio.h>
+
+int main(void){
+    int height, length, width, volume, weight;
+
+    printf("Enter height of box: ");
+    scanf("%d", &height);
+    printf("Enter length of box: ");
+    scanf("%d", &length);
+    printf("Enter width of box: ");
+    scanf("%d", &width);
+    volume = height * length * width;
+    weight = (volume + 165) / 166;
+
+    printf("Volume (cubic inches): %d\n", volume);
+    printf("Dimensional weight (pounds): %d\n", weight);
+
+   return 0;
+}
+```
+**OUTPUT**
+```
+Enter height of box: 8
+Enter length of box: 12
+Enter width of box: 10
+Volume (cubic inches): 960
+Dimensional weight (pounds): 6
+```
+- 사용자에게 입력하라고 하는 메시지는 개행 문자로 끝내지 않는다. 왜냐하면 사용자가 같은 줄에 입력하길 바라기 때문이다.
+- 사용자가 엔터키를 누르면, 커서는 자동적으로 다음줄로 넘어간다. 즉, 프로그램은 줄이 끝날 때 개행 문자를 넣을 필요 없다.
+- **dweight2.c**는 사용자가 숫자가 아닌 입력을 하면 문제가 생긴다.
+
+## 2.6 Defining Names for Constants
+
+- **매크로 정의**(Macro Definition)을 사용하여 상수에 이름을 붙일 수 있다.
+    ```c
+    #define INCHES_PER_POUND 166
+    ```
+    #define은 전처리 지시어이다. 따라서 세미콜론이 붙지 않는다.
+- 컴파일될 떄, 전처리기가 각 매크로를 각각의 값으로 대체한다. 예를들어 다음 구문은
+    ```c
+    weight = (volume + INCHES_PER_POUND - 1) / INCHES_PER_POUND;
+    ```
+    다음과 같이 된다.
+    ```c
+    weight = (volume + 166 - 1) / 166;
+- 매크로가 연산자를 포함한다면, 표현식은 괄호로 쌓여야 한다.
+    ```c
+    #define RECIPROCAL_OF_PI (1.0f / 3.14159f)
+    ```
+- 매크로 이름에 대문자만 사용하는 것을 주목하자, 대부분의 C 프로그래머가 이런 관습을 따른다. 필수는 아니지만 프로그래머들이 수백년동안 이렇게 하고 있다.
+
+### [PROGRAM] Converting from Fahrenheit to Celsius
+
+- 화씨를 입력하면 섭씨로 변환해주는 프로그램을 만들어보자
+- 출력은 다음과 같은 형식이다.
+    ```
+    Enter Fahrenheit temperature: 212
+    Celsius equivalent: 100.0
+    ```
+    온도가 정수가 되지 않도록 한다.
+
+```c
+/// Program name: celsius.c
+/// Converts a Fahrenheit temperature to Celsius
+
+#include <stdio.h>
+
+#define FREEZING_PT 32.0f
+#define SCALE_FACTOR (5.0f / 9.0f)
+
+int main(void)
+{
+    float fahrenheit. celsius;
+
+    printf("Enter Fahrenheit temperature: ");
+    scanf("%f", &fahrenheit);
+
+    celsius = (fahrenheit - FREEZING_PT) * SCALE_FACTOR;
+
+    printf("Celsius equivalent: %.1f\n", celsius);
+
+    return 04;
+}
+```
+- 이 구문은
+    ```c
+    celsius = (fahrenheit - FREEZING_PT) * SCALE_FACTOR;
+    ``` 
+    컴파일러가 다음과 같이 받아들인다.
+    ```c
+    celsius = (fahrenheit - 32.0f) * (5.0f / 9.0f);
+    ```
+
+- **SCALE_FACTOR**을 (5.0f / 9.0f)로 정의하는 것은 중요하다. (5 / 9)로 정의하면 소수점 아래가 버려져 0이 되기 때문이다.
+- %.1f를 사용하여 소수점 아래 한자리만 출력하게 하는 것을 주목하라.
+
+## 2.7 Identifiers
+
+- 프로그램을 작성할 떄, 변수, 함수, 매크로 등등의 이름을 골라야하는데, 이를 **식별자**(Identifier)라고 한다.
+- C에서는 식별자에 문자, 숫자, 밑줄을 사용할 수 있다. (**C99**에서는 **universal character name**도 포함한다)
+- 다음은 사용 가능한 식별자의 예시이다.
+    ```
+    times10  get_next_char  _done
+    ```
+    다음은 사용할 수 없는 식별자의 예시이다.
+    ```
+    10times  get-next-char
+    ```
+    10times는 문자나 밑줄이 아닌 숫자로 시작하고, get-next-char은 밑줄이 아닌 빼기 기호를 포함한다.
+- C는 대소문자를 구별한다.
+- 감각있는 프로그래머들은 식별자들이 관련있더라도 다르게 보이도록 만든다.
+- 대소문자가 중요하므로, 많은 프로그래머들이 매크로가 아닌 식별자들은 **소문자와 밑줄**을 이용한다.
+    ```
+    symbol_table  current_page  name_and_address
+    ```
+- 다른 프로그래머들은 밑줄을 사용하지 않고 각 단어의 시작에 대문자를 사용한다. (첫번째 문자도 대문자로 쓸 때도 있다.)
+    ```
+    symbolTable  currentPage  nameAndAddress
+    ```
+- 첫번째 방법이 전통적으로 흔한 스타일이었지만, 두번째 방법이 Java와 C#이 널리 사용되면서 유명해졌다.
+- 프로그램에 식별자가 나타날 때 마다 동일한 방식으로 식별자를 대문자로 사용해야한다.
+- C는 식별자의 길이에 제한을 두지 않았으므로, 이를 길게 쓰는 것을 꺼리지 말아라.
+- **current_page**는 **cp**같은 이름보다 더욱 이해하기 쉽다.
+
+### Keywords
+
+다음의 **키워드**(Keyword)는 C 컴파일러에게 매우 중요하다. 따라서 식별자로 쓰일 수 없다.
+
+```
+auto, enum, restrict, unsigned, break, extern,
+return, void, case, float, short, volatile,
+char, for, signed, while, const, goto,
+sizeof, _Bool, contiune, if, static, _Complex,
+default, inline, struct, _Imaginary, do, int,
+switch, double, long, typedef, else, register, union
+```
+restrict, _Bool, _Complex, inline, _Imaginary의 다섯개는 **C99**에만있다.
+
+- C가 대소문자를 구별하므로, 이 키워드들은 프로그램 내에서 소문자로 나타난다. 표준 라이브러리의 함수들도 소문자 이름을 가지고 있다.
+- 프로그램을 대문자로 작성하지 말도록하자. 컴파일러가 키워드를 인식하지 못하고 라이브러리 함수를 호출하지 못하게 할 뿐이다..
+
+**[주의] 다른 식별자 제한을 주의하자. 몇몇 컴파일러는 추가적인 키워드를 가지고 있다. 표준 라이브러리에 속하는 식별자또한 제환된다. 우연히 이것 중 하난를 이용하면 컴파일과 링크하는 과정에서 에러가 발생할 수 있다. 밑줄로 시작하는 식별자 또한 제한된다.**
+
+## 2.8 Layout of a C Program
