@@ -697,7 +697,7 @@ restrict, _Bool, _Complex, inline, _Imaginary의 다섯개는 **C99**에만있�
     - -std=c89, -std=c99 : 프로그램을 체크할때 어떤 버젼의 C를 쓸지 명시한다.
 - 이 옵션들은 주로 합쳐서 쓴다.
 ```
-$ gcc -O -Wall -W -pedantic -ansi - std=c99 -o pun pun.c
+$ gcc -O -Wall -W -pedantic -ansi -std=c99 -o pun pun.c
 ```
 
 5. {, }대신 begin, end를 사용하고, int 대신 integer를 쓰거나 했으면 더욱 읽기 좋았을 것 같은데, C는 왜이렇게 간결한가? 
