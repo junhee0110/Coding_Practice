@@ -98,8 +98,8 @@ int main(void)
     printf("Enter radius of a sphere: ");
     scanf("%d", &radius);
     
-    printf("Volume of a sphere with a 10-meter radius: %f\n",(4.0f / 3.0f) * radius * radius * radius * PI);
-    //printf("Volume of a sphere with a 10-meter radius : %f\n",(4 / 3) * radius * radius * radius * PI);
+    printf("Volume of a sphere with entered radius: %f\n",(4.0f / 3.0f) * radius * radius * radius * PI);
+    //printf("Volume of a sphere with entered radius : %f\n",(4 / 3) * radius * radius * radius * PI);
 
     return 0;
 }
@@ -107,7 +107,7 @@ int main(void)
 **Output**
 ```
 Enter radius of a sphere: 10
-Volume of a sphere with a 10-meter radius: 4188.790039
+Volume of a sphere with entered radius: 4188.790039
 ```
 
 # 4번
