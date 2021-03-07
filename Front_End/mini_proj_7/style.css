@@ -1,0 +1,22 @@
+/*문제1*/
+
+body
+{
+    background-image: url(res/christmas_bg.png);
+    background-repeat: no-repeat;
+    font-family: "맑은 고딕";
+}
+/*문제2*/
+h2
+{
+    color: #ffff00;
+    font-size: 28px;
+    font-weight: normal;
+}
+
+/*문제3*/
+p
+{
+    color: #ffffff;
+    font-size: 14px;
+}

@@ -1,0 +1,45 @@
+/*문제1번*/
+ul
+{
+    list-style-type: none;
+}
+
+#top_menu li
+{
+    display: inline;
+}
+
+/*문제2번*/
+#visit_info
+{
+    border-bottom: solid 1px #cccccc;
+    width: 750px;
+    padding-bottom: 5px;
+}
+
+/*문제3번*/
+#fee_info
+{
+    border: solid 1px #bcd6be;
+    background-color: #f6fdf7;
+    width: 400px;
+    margin: 20px;
+    padding: 10px;
+}
+
+/*문제4번*/
+#transport_info
+{
+    list-style-image: url("res/bulit_green.gif");
+}
+
+/*문제5번*/
+#comment
+{
+    width: 700px;
+    border: solid 1px #bcd3be;
+    background-color: #f6fdf7;
+    margin: 20px;
+    padding: 10px;
+    line-height: 150%;
+}

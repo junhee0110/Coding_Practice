@@ -1,0 +1,38 @@
+/*문제1*/
+h1
+{
+    color: #423022;
+    font-family: "맑은 고딕";
+    text-align: center;
+}
+
+/*문제2*/
+p
+{
+    color: #444444;
+    font-size: 16px;
+    font-family: "돋움";
+    line-height: 130%;
+}
+
+/*문제3*/
+#headline
+{
+    color: #8f7e6c;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.orange
+{
+    color: #ff6400;
+}
+
+/*문제4*/
+
+#company
+{
+    color: #307466;
+    font-size: 18px;
+    text-decoration: underline;
+}
