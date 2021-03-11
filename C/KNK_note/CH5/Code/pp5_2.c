@@ -12,15 +12,15 @@ int main(void)
     printf("Enter a 24-hour time: ");
     scanf("%d : %d", &hour, &minute);
 
-    printf("Equivalent 12-hour time: ")
+    printf("Equivalent 12-hour time: ");
     if (hour == 0)
-        printf("12:%d AM", minute);
+        printf("12:%d AM\n", minute);
     else if (hour < 12)
-        printf("%d:%d AM", hour, minute);
+        printf("%d:%d AM\n", hour, minute);
     else if (hour == 12)
-        printf("12:%d PM", minute);
+        printf("12:%d PM\n", minute);
     else
-        printf("%d:%d PM", hour - 12, minute);
+        printf("%d:%d PM\n", hour - 12, minute);
 
     return 0;
 }

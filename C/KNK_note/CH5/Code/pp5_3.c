@@ -13,7 +13,7 @@ int main(void)
     printf("Enter the number of shares : ");
     scanf("%d", &shares);
     printf("Enter the price per share : ");
-    scanf("%f" &price);
+    scanf("%f", &price);
 
     value = shares * price;
 
@@ -28,7 +28,7 @@ int main(void)
     else if (value < 500000.00f)
         commission = 155.00f + 0.0011f * value;
     else
-        commision = 255.00f + 0.0009f * value;
+        commission = 255.00f + 0.0009f * value;
 
     commission = commission < 39.00f ? 39.00f : commission;
 
