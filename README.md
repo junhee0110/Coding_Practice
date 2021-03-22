@@ -25,7 +25,6 @@
 
 ### Front End
 - 공부하고자 하는 건 **Back End**쪽인데, 좋은 기회가 생겨서 **Front End**스터디에 참여했습니다!
-- 아직 명확한 공부 계획은 없지만, [learn js](https://www.learn-js.org/)와 [learn HTML](https://www.learn-html.org/)에 있는 내용들을 **Markdown**에 한글로 정리해볼 예정입니다!
 - 멘토님의 도움도 많이 받을 예정이에요!
 
 ### Python
