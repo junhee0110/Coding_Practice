@@ -5,12 +5,15 @@
 ## 관심분야
 1. Machine Leraning
 2. Embedded Programming
-3. Robot Software
 
 ## 2021-01-30 기준 공부 현황
 - C
 - Machine Learning
 - **[NEW]** Front End
+
+## 2021-08-13 기준 공부 현황
+- 아무것도 못하고 파워 반수중...😂
+- Django는 프로젝트 땜시 하고는 있수다
 
 ### C
 - **KnK**라고 불리고 있는 **K. N. King**의 저서 ***C Programming : A Modern Approach, 2/E***를 읽고 **MardDown**으로 그 내용을 한글로 요약하고 있습니다!
@@ -26,6 +29,10 @@
 ### Front End
 - 공부하고자 하는 건 **Back End**쪽인데, 좋은 기회가 생겨서 **Front End**스터디에 참여했습니다!
 - 멘토님의 도움도 많이 받을 예정이에요!
+
+### Back End
+- Python Django로 동아리 웹 페이지를 만드는 프로젝트를 하고 있습니다!
+- 공식 문서를 읽고 무작정 따라 하는 중~
 
 ### Python
 - Python은 프로젝트에 종종 이용하고 있고, 머신러닝도 Python을 이용하고 있어요!
