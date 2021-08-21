@@ -42,8 +42,6 @@ class BayesianRSP(BaseRSP):
 
         # Predict list
         self.counter_predict = [1/3, 1/3, 1/3]
-        self.ex_counter_predict = [1/3, 1/3, 1/3]
-        
         self.ex_RSP = 0 # Rock, exRSP of counter
         self.counter_RSP = 0 # Rock, predict nowRSP of counter
         self.my_RSP = 0 # Rock, nowRPS of mine
@@ -54,19 +52,18 @@ class BayesianRSP(BaseRSP):
             self.counter_RSP =  random.randint(0,2)
         else:
             for x in range(3):
-                self.ex_counter_predict[x] = self.counter_predict[x]
-                self.counter_predict[x] = 1/3
+                self.counter_predict[x] = self.record[self.ex_RSP][x] / sum(self.record[self.ex_RSP])
 
             self.counter_RSP = self.counter_predict.index(max(self.counter_predict))
 
     def chooseRSP(self):
-        self.my_RSP = (self.counter_RSP + 1) % 3
+        self.my_RSP = (self.counter_RSP -1) % 3
 
     def play(self, input):
         input_trans = self.RSP_context[input]
         self.predict()
         self.chooseRSP()
-        result = (input_trans - self.my_RSP) % 3
+        result = (input_trans - self.my_RSP - 1) % 3
         self.record[self.ex_RSP][input_trans]+=1
         self.ex_RSP = input_trans
         self.play_time += 1

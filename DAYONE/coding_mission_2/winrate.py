@@ -7,3 +7,6 @@ class WinRate:
 
     def get_WinRate(self):
         return round(self.record[0] / sum(self.record) * 100 ,1)
+
+    def get_LoseRate(self):
+        return round(self.record[1] / sum(self.record) * 100 ,1)
