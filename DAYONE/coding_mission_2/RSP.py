@@ -63,11 +63,11 @@ class BayesianRSP(BaseRSP):
         input_trans = self.RSP_context[input]
         self.predict()
         self.chooseRSP()
-        result = (input_trans - self.my_RSP - 1) % 3
+        result = (input_trans - self.my_RSP) % 3
         self.record[self.ex_RSP][input_trans]+=1
         self.ex_RSP = input_trans
         self.play_time += 1
-        return self.win_word[(result - 1) % 3]
+        return self.win_word[(2 - result) % 3]
 
 
 
